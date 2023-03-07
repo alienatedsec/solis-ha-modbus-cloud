@@ -1,5 +1,5 @@
-## A combination of Solis Cloud, Home Assistant via RS485 (Modbus) communication.
-### This repo is a workaround for Solis inverters to connect Solis Cloud and the local Home Assistant based on my own experience. It will include references and examples of the code, configurations, and required components.
+## Purpose
+A combination of Solis Cloud, Home Assistant via RS485 (Modbus) communication. This repo is a workaround for Solis inverters to connect Solis Cloud and the local Home Assistant based on my own experience. It will include references and examples of the code, configurations, and required components.
 
 ## Limitations and some history
 
