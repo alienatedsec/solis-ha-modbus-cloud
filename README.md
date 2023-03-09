@@ -26,7 +26,9 @@ I was trying different settings as I had some teething issues, and I noticed tha
 
 ## Devices
 
-.....
+- Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
+![image](https://user-images.githubusercontent.com/73167064/224035664-2b01545d-6b8d-4646-ae75-2170aca94882.png)
+
 
 ## Configuration
 
@@ -37,6 +39,22 @@ The `TCP Client` is pointing at the IP of the `TCP Server` with the same Serial 
 Both `TCP Server` and `TCP Client` have the `Modbus_TCP Protocol` as the `Transfer Protocol`
 
 The Waveshare used for the batteries connection is the same device, but the `Transfer Protocol` is set to `None`. I use VirCom to extend its connection to COMX on my laptop, so the software can connect to batteries and monitor them. Looking into using `Modbus_TCP Protocol` and integrating with HA via MQTT or even setting the MQTT on the Waveshare, but that is not my priority at the moment.
+
+## HA Integrations
+
+Datalogger/Waveshare - Modbus TCP - direct connection - e.g., `DLS-L`, `S2-WL-ST`, `Waveshare RS485 to PoE ETH (B)`
+- [Home Assistant Solax Modbus](https://github.com/wills106/homeassistant-solax-modbus)
+- [HA Solis Modbus](https://github.com/fboundy/ha_solis_modbus)
+
+Datalogger - Solarman based - direct connection - e.g., `DLS-W`
+- [Home Assistant Solarman](https://github.com/StephanJoubert/home_assistant_solarman)
+
+Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-ha-modbus-cloud#supported-solis-dataloggers)
+- [Solis Sensor](https://github.com/hultenvp/solis-sensor)
+
+## MQTT
+
+- [SolisMon3](https://github.com/NosIreland/solismon3) - advertising Solis' Inverter data to MQTT - compatible with `DLS-W`
 
 ## Future work
 
