@@ -56,6 +56,10 @@ Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-
 
 ![image](https://user-images.githubusercontent.com/73167064/224035664-2b01545d-6b8d-4646-ae75-2170aca94882.png)
 
+- 1 * £28.00 - PoE Switch - P-Link PoE Switch 5-Port 100 Mbps (TL-SF1005P)
+
+![image](https://user-images.githubusercontent.com/73167064/224323924-eb8add51-3f87-4143-954b-692bfe46346a.png)
+
 - 1 * £12.00 - Exceedconn EC04681-2023-BF Male/Female for Solis/Ginlong Inverter RS-485 port
 
 ![image](https://user-images.githubusercontent.com/73167064/224319164-74400817-a5dd-426f-a5b4-1f6fbb563006.png)
@@ -75,7 +79,7 @@ Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-
 - around £10.00 for some RJ45 cabling and connectors
 
 #### Total Cost
-**£120.50**
+**£148.50**
 
 Optional to connect batteries:
 - 1 * £35.00 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
