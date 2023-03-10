@@ -49,6 +49,8 @@ Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-
 - S2-WL-ST
 - S3-WIFI-ST
 
+![Table](/images/datalogger-table.png)
+
 ## Devices
 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
 ![image](https://user-images.githubusercontent.com/73167064/224035664-2b01545d-6b8d-4646-ae75-2170aca94882.png)
