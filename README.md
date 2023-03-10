@@ -51,8 +51,34 @@ Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-
 
 ![Table](/images/datalogger-table.png)
 
-## Devices
-- Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
+## Devices and cost
+- 2 * £35.00 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
+
+![image](https://user-images.githubusercontent.com/73167064/224035664-2b01545d-6b8d-4646-ae75-2170aca94882.png)
+
+- 1 * £12.00 - Exceedconn EC04681-2023-BF Male/Female for Solis/Ginlong Inverter RS-485 port
+
+![image](https://user-images.githubusercontent.com/73167064/224319164-74400817-a5dd-426f-a5b4-1f6fbb563006.png)
+
+- 1 * £2.50 - DIN rail
+
+![image](https://user-images.githubusercontent.com/73167064/224319811-1bc2c361-811b-4d4f-8518-c0ee8b928317.png)
+
+- 1 * £20.00 - Sourcingmap 240mm x 160mm x 90mm Plastic Dustproof IP65 DIY Junction Box Power Protection Case - I recommend a bigger box = more expensive
+
+![image](https://user-images.githubusercontent.com/73167064/224323031-75df733b-3bf0-4851-bb71-75eeabc4e6af.png)
+
+- 1 * £6.00 - Pack M20 20mm IP68 Waterproof Red Cable Glands, Suitable for 6mm - 12mm Cables, Plastic Nylon Compression Glands Connectors with Locknut and Washer - AVARTEK
+
+![image](https://user-images.githubusercontent.com/73167064/224322440-14c7f351-8b1b-48f5-9538-c028f3aafc99.png)
+
+- around £10.00 for some RJ45 cabling and connectors
+
+#### Total Cost
+**£120.50**
+
+Optional to connect batteries:
+- 1 * £35.00 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
 ![image](https://user-images.githubusercontent.com/73167064/224035664-2b01545d-6b8d-4646-ae75-2170aca94882.png)
 
 ## Future work
