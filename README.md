@@ -89,3 +89,11 @@ Optional to connect batteries:
 - Compatibility with other brands and inverters
 - More Solution Concepts
 - Battery Monitoring - HA, MQTT
+
+### DISCLAIMER
+**I AM NOT RESPONSIBLE FOR ANY USE OR DAMAGE THIS DESIGN MAY CAUSE. THIS IS INTENDED FOR EDUCATIONAL PURPOSES ONLY. USE AT YOUR OWN RISK.**
+---
+### DONATIONS
+**IF YOU FOUND THIS USEFUL, YOU CAN BUY ME A BEER**
+---
+[![paypal](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K3V4PSH2CV9AA)
