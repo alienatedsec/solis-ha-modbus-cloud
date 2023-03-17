@@ -20,10 +20,15 @@ The main device is the Waveshare RS485 to PoE ETH (B) - the non-PoE version is d
 
 I was trying different settings as I had some teething issues, and I noticed that it works better when the integration (I am using [Home Assistant SolaX Modbus integration](https://github.com/wills106/homeassistant-solax-modbus) for my Solis inverter) is pulling data more often (e.g., every 5 seconds). There was an issue raised to resolve errors in reporting, and the solution to reduce the block size proposed by the author seems to be working well. You can find more [at the following address.](https://github.com/wills106/homeassistant-solax-modbus/issues/340)
 
-## Configuration
-- The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud/edit/master/README.md#diagram) acts as a gateway for other devices (datalogger and HA integration), and it has a baud rate of 9600. The `Modbus gateway type` is `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning.
+## Wiring
+I recommend using one of the pairs from the Ethernet cable for RS485 wiring. There is no need for 120 Ohms resistors at each end of the RS485. Both, Waveshare and the Inverter have resistors built-in.
 
-- The `TCP Client` is pointing at the IP of the `TCP Server` with the same Serial config.
+![Wiring](/images/solis-ha-modbus-cloud-wiring.png)
+
+## Configuration
+- The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud/edit/master/README.md#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud/edit/master/README.md#final-result) acts as a gateway for other devices (datalogger and HA integration), and it has a baud rate of 9600. The `Modbus gateway type` is `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning.
+
+- The `TCP Client` [presented here as 171 DLG](https://github.com/alienatedsec/solis-ha-modbus-cloud/edit/master/README.md#final-result) is pointing at the IP of the `TCP Server` with the same Serial config.
 
 - Both `TCP Server` and `TCP Client` have the `Modbus_TCP Protocol` as the `Transfer Protocol`
 
@@ -84,6 +89,9 @@ Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-
 Optional to connect batteries:
 - 1 * £35.00 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
 ![image](https://user-images.githubusercontent.com/73167064/224035664-2b01545d-6b8d-4646-ae75-2170aca94882.png)
+
+## Final Result
+![Final](/images/solis-ha-modbus-cloud-final.jpg)
 
 ## Future work
 - Compatibility with other brands and inverters
