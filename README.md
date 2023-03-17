@@ -23,7 +23,7 @@ I was trying different settings as I had some teething issues, and I noticed tha
 ## Wiring
 I recommend using one of the pairs from the Ethernet cable for RS485 wiring. There is no need for 120 Ohms resistors at each end of the RS485. Both, Waveshare and the Inverter have resistors built-in.
 
-![Wiring](/images/solis-ha-modbus-wiring-cloud-diagram.png)
+![Wiring](/images/solis-ha-modbus-cloud-wiring-diagram.png)
 
 ## Configuration
 - The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud/edit/master/README.md#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud/edit/master/README.md#final-result) acts as a gateway for other devices (datalogger and HA integration), and it has a baud rate of 9600. The `Modbus gateway type` is `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning.
