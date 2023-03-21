@@ -28,9 +28,21 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. The
 ## Configuration
 - The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) acts as a gateway for other devices (datalogger and HA integration), and it has a baud rate of 9600. The `Modbus gateway type` is `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning.
 
-- The `TCP Client` [presented here as 171 DLG](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) is pointing at the IP of the `TCP Server` with the same Serial config.
+- The `TCP Client` [presented here as 171 DLG](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) is pointing at the IP and the port of the `TCP Server` with the same Serial config - screenshots below
 
-- Both `TCP Server` and `TCP Client` have the `Modbus_TCP Protocol` as the `Transfer Protocol`
+- Both `TCP Server` and `TCP Client` have the `Modbus_TCP Protocol` as the `Transfer Protocol` - see the screenshot below.
+
+**TCP Client Config**
+
+![image](https://user-images.githubusercontent.com/73167064/226737118-e6271076-2951-4f0a-ba35-22ce4abb236b.png)
+
+**TCP Server Config**
+
+![image](https://user-images.githubusercontent.com/73167064/226735797-aaac1a55-0f95-4489-ba50-ac5a31f749c0.png)
+
+**More Advanced Settings for both**
+
+![image](https://user-images.githubusercontent.com/73167064/226738214-447a9ece-2c9e-4211-9de8-320c0e2b570a.png)
 
 - The Waveshare used for the batteries connection is the same device, but the `Transfer Protocol` is set to `None`. I use VirCom to extend its connection to COMX on my laptop, so the software can connect to batteries and monitor them. Looking into using `Modbus_TCP Protocol` and integrating with HA via MQTT or even setting the MQTT on the Waveshare, but that is not my priority at the moment.
 
