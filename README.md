@@ -32,17 +32,21 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. The
 
 - Both `TCP Server` and `TCP Client` have the `Modbus_TCP Protocol` as the `Transfer Protocol` - see the screenshot below.
 
-**TCP Client Config**
-
-![image](https://user-images.githubusercontent.com/73167064/226737118-e6271076-2951-4f0a-ba35-22ce4abb236b.png)
-
 **TCP Server Config**
 
 ![image](https://user-images.githubusercontent.com/73167064/226735797-aaac1a55-0f95-4489-ba50-ac5a31f749c0.png)
 
-**More Advanced Settings for both**
+**More Advanced Settings for TCP Server**
 
-![image](https://user-images.githubusercontent.com/73167064/226738214-447a9ece-2c9e-4211-9de8-320c0e2b570a.png)
+![image](https://user-images.githubusercontent.com/73167064/228172305-e645d43d-a3b8-4f77-ba12-0342f3d70372.png)
+
+**TCP Client Config**
+
+![image](https://user-images.githubusercontent.com/73167064/228181657-2b27e62f-4ddc-4d84-a77b-f074432c423e.png)
+
+**More Advanced Settings for TCP Client**
+
+![image](https://user-images.githubusercontent.com/73167064/228171953-77bd13f3-a323-4732-bb3d-2d139ee400d9.png)
 
 - The Waveshare used for the batteries connection is the same device, but the `Transfer Protocol` is set to `None`. I use VirCom to extend its connection to COMX on my laptop, so the software can connect to batteries and monitor them. Looking into using `Modbus_TCP Protocol` and integrating with HA via MQTT or even setting the MQTT on the Waveshare, but that is not my priority at the moment.
 
