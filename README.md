@@ -6,6 +6,8 @@ My PV installation commenced back in August 2022. Since then, I started my journ
 
 Most importantly, my design doesn't disconnect the Solis cloud, and works (coexists) with your local Home Assistant integration in combination with [any Solis datalogger](https://github.com/alienatedsec/solis-ha-modbus-cloud#supported-solis-dataloggers). 
 
+You can watch a great video from `Gordon Markus` summarising his 12-months experience and Solis inverters limitations - https://youtu.be/F7r12UjzZyU
+
 ## Diagram
 ![Diagram](/images/solis-ha-modbus-cloud-diagram.png)
 
