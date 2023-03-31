@@ -20,10 +20,10 @@ Here it comes the Waveshare gateway to query the inverter. It can serve multiple
 
 The main device is the Waveshare RS485 to PoE ETH (B) - the non-PoE version is described as per [this guideline](https://github.com/wills106/homeassistant-solax-modbus/wiki/Installation-Notes#option-1-waveshare-rs485-to-eth-b-din-rail-mounted-model). There are no major differences between PoE and non-PoE devices, except for the convenience of powering those when you have multiple next in line.
 
-I was trying different settings as I had some teething issues, and I noticed that it works better when the integration (I am using [Home Assistant SolaX Modbus integration](https://github.com/wills106/homeassistant-solax-modbus) for my Solis inverter) is pulling data more often (e.g., every 5 seconds). There was an issue raised to resolve errors in reporting, and the solution to reduce the block size proposed by the author seems to be working well. You can find more [at the following address.](https://github.com/wills106/homeassistant-solax-modbus/issues/340)
+I was trying different settings as I had some teething issues, and I noticed that it works better when the integration (I am using [Home Assistant SolaX Modbus integration](https://github.com/wills106/homeassistant-solax-modbus) for my Solis inverter) is polling data more often (e.g., every 5 seconds). As much as no longer relevant, you can find more about those issues [at the following address.](https://github.com/wills106/homeassistant-solax-modbus/issues/340)
 
 ## Wiring
-I recommend using one of the pairs from the Ethernet cable for RS485 wiring. There is no need for 120 Ohms resistors at each end of the RS485. Both, Waveshare and the Inverter have resistors built-in.
+I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g., A twisted pair of `blue` for RS485(A) and `white-blue` for RS485(B). There is no need for 120 Ohms resistors at each end of the RS485. Both, Waveshare and the Inverter have resistors built-in.
 
 ![Wiring](/images/solis-ha-modbus-cloud-wiring-diagram.png)
 
