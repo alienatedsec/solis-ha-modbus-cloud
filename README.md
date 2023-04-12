@@ -74,6 +74,14 @@ Cloud connection - [any Solis datalogger](https://github.com/alienatedsec/solis-
 
 ![Table](/images/datalogger-table.png)
 
+## Untested Solis Dataloggers
+- S1-W4G-ST (4-pin)
+
+## Incompatible and untested Solis Dataloggers
+The below will be incompatible with the 4-pin `Exceedconn EC04681-2023-BF Male/Female` connector, but could still work with the above [HA Integrations](https://github.com/alienatedsec/solis-ha-modbus-cloud#ha-integrations)
+- S1-W4G-ST (USB)
+- S4-WIFI-ST (USB)
+
 ## Devices and cost
 - 2 * £35.00 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
 
