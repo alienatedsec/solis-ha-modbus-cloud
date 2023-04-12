@@ -14,7 +14,7 @@ You can watch a great video from `Gordon Markus` summarising his 12-months exper
 ## Description
 The main goal is to ensure that a datalogger can work as normal and without any distruption. The datalogger acts as the Master device, and it talks directly to the inverter (Slave). Having an additional Master (e.g., Waveshare Gateway) on the same RS485 network is to create collisions, which could affect all RS485 devices. Some dataloggers don't accept multiple TCP connections (e.g., `S2-WL-ST`), and those will disconnect the Solis Cloud whenever used with an integration; others don't support Modbus TCP (e.g., `DLS-W`, `S3-WIFI-ST`), and some will fully rely on the cloud (`S3-WIFI-ST`). Some obsolete dataloggers couldn't provide `remote` functionality via Solis Cloud (e.g., `DLS-W`, `DLS-L`).
 
-Here it comes the Waveshare gateway to query the inverter. It can serve multiple clients, keep the inverter's cloud reporting functionality,  and is not limited by any datalogger. The below is my configuration, but the use case could differ per datalogger.
+Here it comes the Waveshare gateway to query the inverter. It can serve multiple clients, keep the inverter's cloud reporting functionality,  and is not limited by any supported datalogger. The below is my configuration, but the use case could differ per datalogger.
 
 ![Diagram](/images/solis-custom-diagram.png)
 
