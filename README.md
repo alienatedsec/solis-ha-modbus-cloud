@@ -56,7 +56,7 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g
 
 ## HA Integrations
 Datalogger/Waveshare - Modbus TCP - direct connection - e.g., `DLS-L`, `S2-WL-ST`, `Waveshare RS485 to PoE ETH (B)`
-- [Home Assistant Solax Modbus](https://github.com/wills106/homeassistant-solax-modbus)
+- [Home Assistant Solax Modbus](https://github.com/wills106/homeassistant-solax-modbus) - stable since [2023.03.2b18](https://github.com/wills106/homeassistant-solax-modbus/releases/tag/2023.03.2b18)
 - [HA Solis Modbus](https://github.com/fboundy/ha_solis_modbus)
 
 Datalogger - Solarman based - direct connection - e.g., `DLS-W`
