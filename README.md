@@ -30,6 +30,7 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g
 ![Wiring](/images/solis-ha-modbus-cloud-wiring-diagram.png)
 
 ## Configuration
+**Still under review - see** https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/7 
 - The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) acts as a gateway for other devices (datalogger and HA integration), and it has a baud rate of 9600. The `Modbus gateway type` is `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning.
 
 - The `TCP Client` [presented here as 171 DLG](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) is pointing at the IP and the port of the `TCP Server` with the same Serial config - screenshots below
