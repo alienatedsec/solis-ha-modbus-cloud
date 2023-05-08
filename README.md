@@ -18,7 +18,12 @@ The main goal is to ensure that a datalogger can work as normal and without any 
 
 Here it comes the Waveshare gateway to query the inverter. It can serve multiple clients, keep the inverter's cloud reporting functionality,  and is not limited by any supported datalogger. The below is my configuration, but the use case could differ per datalogger.
 
+## Solution Concepts
+**DLS-W
 ![Diagram](/images/solis-custom-diagram.png)
+
+**S2-WL-ST
+![Diagram](/images/solis-custom-diagram-s2.png)
 
 The main device is the Waveshare RS485 to PoE ETH (B) - the non-PoE version is described as per [this guideline](https://github.com/wills106/homeassistant-solax-modbus/wiki/Installation-Notes#option-1-waveshare-rs485-to-eth-b-din-rail-mounted-model). There are no major differences between PoE and non-PoE devices, except for the convenience of powering those when you have multiple next in line.
 
