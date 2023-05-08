@@ -18,16 +18,18 @@ The main goal is to ensure that a datalogger can work as normal and without any 
 
 Here it comes the Waveshare gateway to query the inverter. It can serve multiple clients, keep the inverter's cloud reporting functionality,  and is not limited by any supported datalogger. The below is my configuration, but the use case could differ per datalogger.
 
-## Solution Concepts
-**DLS-W
-![Diagram](/images/solis-custom-diagram.png)
-
-**S2-WL-ST
-![Diagram](/images/solis-custom-diagram-s2.png)
-
 The main device is the Waveshare RS485 to PoE ETH (B) - the non-PoE version is described as per [this guideline](https://github.com/wills106/homeassistant-solax-modbus/wiki/Installation-Notes#option-1-waveshare-rs485-to-eth-b-din-rail-mounted-model). There are no major differences between PoE and non-PoE devices, except for the convenience of powering those when you have multiple next in line.
 
 I was trying different settings as I had some teething issues, and I noticed that it works better when the integration (I am using [Home Assistant SolaX Modbus integration](https://github.com/wills106/homeassistant-solax-modbus) for my Solis inverter) is polling data more often (e.g., every 5 seconds). As much as no longer relevant, you can find more about those issues [at the following address.](https://github.com/wills106/homeassistant-solax-modbus/issues/340)
+
+## Solution Concepts
+**DLS-W - Solis Sensor, Home Assistant Solax Modbus, SolisMon3, Grafana**
+
+![Diagram](/images/solis-custom-diagram.png)
+
+**S2-WL-ST - Solis Sensor, Home Assistant Solax Modbus**
+
+![Diagram](/images/solis-custom-diagram-s2.png)
 
 ## Wiring
 I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g., A twisted pair of `blue` for RS485(A) and `white-blue` for RS485(B). There is no need for 120 Ohms resistors at each end of the RS485. Both, Waveshare and the Inverter have resistors built-in.
