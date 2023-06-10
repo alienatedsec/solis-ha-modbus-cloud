@@ -37,7 +37,7 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g
 ![Wiring](/images/solis-ha-modbus-cloud-wiring-diagram.png)
 
 ## Configuration
-**Still under review - see** https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/7 
+**Still under review - if you experienced data spiking in Home Assistant or in the Solis Cloud, see https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/7 and the following https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/14#discussioncomment-6132857**
 - The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) acts as a gateway for other network devices (e.g., the datalogger wired to `TCP Client` and for any compatible HA integration).
 - The Serial baud rate is 9600 - default on the inverter
 - The `TCP Server` - `Modbus gateway type` is set to `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning based on Waveshare documentation.
@@ -51,6 +51,7 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g
 ![server](/images/solis-ha-modbus-cloud-server.png)
 
 **More Advanced Settings for TCP Server**
+In some scenarios you may need to change `Auto-query storage type` to `Multi-host non-storage type` as per https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/14#discussioncomment-6132857
 
 ![server-advanced](/images/solis-ha-modbus-cloud-server-adv.png)
 
