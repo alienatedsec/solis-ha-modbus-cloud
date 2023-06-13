@@ -37,21 +37,23 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g
 ![Wiring](/images/solis-ha-modbus-cloud-wiring-diagram.png)
 
 ## Configuration
-**Still under review - if you experienced data spiking in Home Assistant or in the Solis Cloud, see https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/7 and the following https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/14#discussioncomment-6132857**
+
+**Please use VirCom (not the Web Interface) to configure your Waveshare devices
+
+- Follow the prerequisite (Optional) - [Waveshare firmware update to `v1.486`](https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/17) - further discussed in this thread https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/14
 - The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) acts as a gateway for other network devices (e.g., the datalogger wired to `TCP Client` and for any compatible HA integration).
-- The Serial baud rate is 9600 - default on the inverter
-- The `TCP Server` - `Modbus gateway type` is set to `Auto query storage type`, and I enabled `multi-host`, so the datalogger queries will not create conflicts - at least that is my reasoning based on Waveshare documentation.
-- The `TCP Client` - `Modbus gateway type` is set to `Simple Modbus TCP to RTU`, and `multi-host` is not enabled.
-- You should use the IP address and the port number of the `TCP Server` when configuring any `Modbus TCP` compatible integration - e.g., like in the [Home Assistant Solax Modbus](https://github.com/wills106/homeassistant-solax-modbus#installation) installation notes.
-- Therefore, the `TCP Client` [presented here as 171 DLG](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) has its own IP address (irrevelevant), but within its `Dest IP/Domain` and `Dest. Port` config fields, it has to use the IP and the port of the `TCP Server`, and it needs the same Serial config - screenshots below
-- Both `TCP Server` and `TCP Client` have the `Modbus_TCP Protocol` set as the `Transfer Protocol` - Waveshare is converting `Modbus RTU` messages to `Modbus TCP` and vice-versa - screenshots below.
+- The Serial baud rate on the `TCP Server` is 9600 - default on the inverter; however, you can amend it independently to datalogger's settings - up to 38400 on the inverter, and match the same within `TCP Server` settings - increasing the baud rate is highly recommended.
+- The `TCP Server` - `Modbus gateway type` is set to `Multi-host non-storage type` - RS485 Multi-Host and Bus Conflict detection **enabled**.
+- The `TCP Client` - `Modbus gateway type` is set to `Simple Modbus TCP to RTU` - RS485 Multi-Host and Bus Conflict detection **disabled**.
+- You should use the IP address and the port number of your `TCP Server` when configuring any `Modbus TCP` compatible integration - e.g., like in the [Home Assistant Solax Modbus](https://github.com/wills106/homeassistant-solax-modbus#installation) installation notes.
+- Therefore, the `TCP Client` [presented here as 171 DLG](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) has its own IP address (irrevelevant), but within its `Dest IP/Domain` and `Dest. Port` config fields, it has to use the IP and the port of the `TCP Server`, and it needs the same Serial config as on a datalogger - baud rate 9600 - default for `S2-WL-ST` and `S3-WIFI-ST` dataloggers, where `DLS-W` and `DLS-L` baud rate can be amended via their hidden config web page `http://IP/config_hide.html`
+- Both `TCP Server` and `TCP Client` - `Transfer Protocol` is set to `Modbus_TCP Protocol` - Waveshare is converting `Modbus RTU` messages to `Modbus TCP` and vice-versa - screenshots below.
 
 **TCP Server Config**
 
 ![server](/images/solis-ha-modbus-cloud-server.png)
 
 **More Advanced Settings for TCP Server**
-In some scenarios you may need to change `Auto-query storage type` to `Multi-host non-storage type` as per https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/14#discussioncomment-6132857
 
 ![server-advanced](/images/solis-ha-modbus-cloud-server-adv.png)
 
