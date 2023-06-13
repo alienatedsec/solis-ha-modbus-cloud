@@ -38,7 +38,7 @@ I recommend using one of the pairs from the Ethernet cable for RS485 wiring. e.g
 
 ## Configuration
 
-**Please use VirCom (not the Web Interface) to configure your Waveshare devices
+**Please use VirCom (not the Web Interface) to configure your Waveshare devices**
 
 - Follow the prerequisite (Optional) - [Waveshare firmware update to `v1.486`](https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/17) - further discussed in this thread https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/14
 - The `TCP Server` on my [diagram](https://github.com/alienatedsec/solis-ha-modbus-cloud#diagram) and [presented here as 187 GW](https://github.com/alienatedsec/solis-ha-modbus-cloud#final-result) acts as a gateway for other network devices (e.g., the datalogger wired to `TCP Client` and for any compatible HA integration).
