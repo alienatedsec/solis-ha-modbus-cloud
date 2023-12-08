@@ -125,7 +125,9 @@ The below will be incompatible with the 4-pin `Exceedconn EC04681-2023-BF Male/F
 - around £10.00 for some RJ45 cabling and connectors
 
 #### Total Cost
-**£148.50**
+**£148.50** (pricing out of date)
+  or 
+**£93.00** if you follow [this discussion #24](https://github.com/alienatedsec/solis-ha-modbus-cloud/discussions/24)
 
 Optional to connect batteries:
 - 1 * £35.00 - Waveshare RS485 to PoE ETH (B) - https://www.waveshare.com/wiki/RS485_TO_POE_ETH_(B)
